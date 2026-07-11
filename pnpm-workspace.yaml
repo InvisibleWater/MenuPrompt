@@ -1,0 +1,37 @@
+allowBuilds:
+  '@quenty/acceltween': true
+  '@quenty/baseobject': true
+  '@quenty/basicpane': true
+  '@quenty/blend': true
+  '@quenty/brio': true
+  '@quenty/cancellabledelay': true
+  '@quenty/canceltoken': true
+  '@quenty/deferred': true
+  '@quenty/ducktype': true
+  '@quenty/enumutils': true
+  '@quenty/gamescalingutils': true
+  '@quenty/genericscreenguiprovider': true
+  '@quenty/instanceutils': true
+  '@quenty/loader': true
+  '@quenty/maid': true
+  '@quenty/math': true
+  '@quenty/nevermore-test-runner': true
+  '@quenty/promise': true
+  '@quenty/promisemaid': true
+  '@quenty/promptqueue': true
+  '@quenty/rx': true
+  '@quenty/rxsignal': true
+  '@quenty/servicebag': set this to true or false
+  '@quenty/signal': true
+  '@quenty/spring': true
+  '@quenty/steputils': true
+  '@quenty/string': true
+  '@quenty/symbol': true
+  '@quenty/table': true
+  '@quenty/throttle': true
+  '@quenty/timedtween': true
+  '@quenty/transitionmodel': true
+  '@quenty/typeutils': true
+  '@quenty/uiobjectutils': true
+  '@quenty/valuebaseutils': true
+  '@quenty/valueobject': true

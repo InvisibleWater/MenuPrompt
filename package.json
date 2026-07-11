@@ -1,0 +1,51 @@
+{
+  "name": "@invisiblewater/menuprompt",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "preinstall": "npx only-allow pnpm"
+  },
+  "keywords": [
+    "Roblox",
+    "Nevermore",
+    "Luau",
+    "menuprompt"
+  ],
+  "author": "InvisibleWater",
+  "license": "MIT",
+  "homepage": "https:/github.com/InvisibleWater/PlayerBankService#readme",
+  "bugs": {
+    "url": "https://github.com/InvisibleWater/MenuPrompt/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/InvisibleWater/MenuPrompt.git"
+  },
+  "funding": {
+    "type": "github",
+    "url": "https://github.com/sponsors/InvisibleWater"
+  },
+  "devEngines": {
+    "packageManager": {
+      "name": "pnpm",
+      "version": "^11.9.0",
+      "onFail": "download"
+    }
+  },
+  "type": "module",
+  "dependencies": {
+    "@quenty/basicpane": "^13.31.1",
+    "@quenty/blend": "^12.36.1",
+    "@quenty/gamescalingutils": "^13.36.1",
+    "@quenty/genericscreenguiprovider": "^13.39.1",
+    "@quenty/loader": "^10.11.0",
+    "@quenty/maid": "^3.9.0",
+    "@quenty/promise": "^10.18.1",
+    "@quenty/promptqueue": "^1.37.1",
+    "@quenty/rx": "^13.28.3",
+    "@quenty/servicebag": "^11.18.1",
+    "@quenty/transitionmodel": "^7.38.1",
+    "@quenty/valueobject": "^13.31.1"
+  }
+}

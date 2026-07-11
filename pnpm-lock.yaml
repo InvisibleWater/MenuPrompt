@@ -1,0 +1,609 @@
+---
+lockfileVersion: '9.0'
+
+importers:
+
+  .:
+    configDependencies: {}
+    packageManagerDependencies:
+      '@pnpm/exe':
+        specifier: ^11.9.0
+        version: 11.11.0
+      pnpm:
+        specifier: ^11.9.0
+        version: 11.11.0
+
+packages:
+
+  '@pnpm/exe@11.11.0':
+    resolution: {integrity: sha512-OpTrbkAU0Ur8gBwhAT6mbWwlA1bFU8zPcFNdp/img/RqFIc7Dn0j0crW9rz5hxTWo/UBQjy6Sb9jh+N5bRSd+g==}
+    hasBin: true
+
+  '@pnpm/linux-arm64@11.11.0':
+    resolution: {integrity: sha512-62K/kQY3jaoQ96MNUi0NLcTSSDO2QrtziOA2IK5R/m+DxpSwXbxFSQHYx8oOg0r1+MFVqwuDkFjXe6DyW3y58g==}
+    cpu: [arm64]
+    os: [linux]
+
+  '@pnpm/linux-x64@11.11.0':
+    resolution: {integrity: sha512-rwMbNJR+PstRu+ymWoApei1CWrAnsnW3tm+3H8qOxbp8duiaj6u7DxlMzhKbVpFwylxcJdeGwZ5tReBFOVpsdw==}
+    cpu: [x64]
+    os: [linux]
+
+  '@pnpm/linuxstatic-arm64@11.11.0':
+    resolution: {integrity: sha512-OcmrMw1hxNee7KTBpE0yToTZziH/SCmJWwjB7YN2NmsxZVPKM2vtOWFdZufW0YN5JffKMaHbPZ2ulgYBM5qAQw==}
+    cpu: [arm64]
+    os: [linux]
+    libc: [musl]
+
+  '@pnpm/linuxstatic-x64@11.11.0':
+    resolution: {integrity: sha512-pWeAYeS+PPah6mXcJbOr+nPwEpyQau4iPcsqNUhTK9G5/qpG5dU1m8oHeIH83PuUUvvdJddLE1PXUkGM+QCI6g==}
+    cpu: [x64]
+    os: [linux]
+    libc: [musl]
+
+  '@pnpm/macos-arm64@11.11.0':
+    resolution: {integrity: sha512-62P8Pe4yvMkdl2nxswCjM5X835i9Judk68CZvv8OnWsm7CVCEZ61SEBnNTpjJ4kXzdayFjRpPwE/jfJSvPaWww==}
+    cpu: [arm64]
+    os: [darwin]
+
+  '@pnpm/win-arm64@11.11.0':
+    resolution: {integrity: sha512-yYAx+A1oT+mSgrIzysuAvdYYMYEfAa+z3/UCGY3L5VC9oabs9qi71LbTan1cDui/AadrIvD177k9mV4V38KAJg==}
+    cpu: [arm64]
+    os: [win32]
+
+  '@pnpm/win-x64@11.11.0':
+    resolution: {integrity: sha512-ehTuyM5Rrp4ye0SdtAJkUS+9ykfwdDY9SPqiK3+bxXPx3LD5aeDw2EBksTh/xRTgqFdYmoFR86cABFt9yBr0GA==}
+    cpu: [x64]
+    os: [win32]
+
+  '@reflink/reflink-darwin-arm64@0.1.19':
+    resolution: {integrity: sha512-ruy44Lpepdk1FqDz38vExBY/PVUsjxZA+chd9wozjUH9JjuDT/HEaQYA6wYN9mf041l0yLVar6BCZuWABJvHSA==}
+    engines: {node: '>= 10'}
+    cpu: [arm64]
+    os: [darwin]
+
+  '@reflink/reflink-darwin-x64@0.1.19':
+    resolution: {integrity: sha512-By85MSWrMZa+c26TcnAy8SDk0sTUkYlNnwknSchkhHpGXOtjNDUOxJE9oByBnGbeuIE1PiQsxDG3Ud+IVV9yuA==}
+    engines: {node: '>= 10'}
+    cpu: [x64]
+    os: [darwin]
+
+  '@reflink/reflink-linux-arm64-gnu@0.1.19':
+    resolution: {integrity: sha512-7P+er8+rP9iNeN+bfmccM4hTAaLP6PQJPKWSA4iSk2bNvo6KU6RyPgYeHxXmzNKzPVRcypZQTpFgstHam6maVg==}
+    engines: {node: '>= 10'}
+    cpu: [arm64]
+    os: [linux]
+    libc: [glibc]
+
+  '@reflink/reflink-linux-arm64-musl@0.1.19':
+    resolution: {integrity: sha512-37iO/Dp6m5DDaC2sf3zPtx/hl9FV3Xze4xoYidrxxS9bgP3S8ALroxRK6xBG/1TtfXKTvolvp+IjrUU6ujIGmA==}
+    engines: {node: '>= 10'}
+    cpu: [arm64]
+    os: [linux]
+    libc: [musl]
+
+  '@reflink/reflink-linux-x64-gnu@0.1.19':
+    resolution: {integrity: sha512-jbI8jvuYCaA3MVUdu8vLoLAFqC+iNMpiSuLbxlAgg7x3K5bsS8nOpTRnkLF7vISJ+rVR8W+7ThXlXlUQ93ulkw==}
+    engines: {node: '>= 10'}
+    cpu: [x64]
+    os: [linux]
+    libc: [glibc]
+
+  '@reflink/reflink-linux-x64-musl@0.1.19':
+    resolution: {integrity: sha512-e9FBWDe+lv7QKAwtKOt6A2W/fyy/aEEfr0g6j/hWzvQcrzHCsz07BNQYlNOjTfeytrtLU7k449H1PI95jA4OjQ==}
+    engines: {node: '>= 10'}
+    cpu: [x64]
+    os: [linux]
+    libc: [musl]
+
+  '@reflink/reflink-win32-arm64-msvc@0.1.19':
+    resolution: {integrity: sha512-09PxnVIQcd+UOn4WAW73WU6PXL7DwGS6wPlkMhMg2zlHHG65F3vHepOw06HFCq+N42qkaNAc8AKIabWvtk6cIQ==}
+    engines: {node: '>= 10'}
+    cpu: [arm64]
+    os: [win32]
+
+  '@reflink/reflink-win32-x64-msvc@0.1.19':
+    resolution: {integrity: sha512-E//yT4ni2SyhwP8JRjVGWr3cbnhWDiPLgnQ66qqaanjjnMiu3O/2tjCPQXlcGc/DEYofpDc9fvhv6tALQsMV9w==}
+    engines: {node: '>= 10'}
+    cpu: [x64]
+    os: [win32]
+
+  '@reflink/reflink@0.1.19':
+    resolution: {integrity: sha512-DmCG8GzysnCZ15bres3N5AHCmwBwYgp0As6xjhQ47rAUTUXxJiK+lLUxaGsX3hd/30qUpVElh05PbGuxRPgJwA==}
+    engines: {node: '>= 10'}
+
+  detect-libc@2.1.2:
+    resolution: {integrity: sha512-Btj2BOOO83o3WyH59e8MgXsxEQVcarkUOpEYrubB0urwnN10yQ364rsiByU11nZlqWYZm05i/of7io4mzihBtQ==}
+    engines: {node: '>=8'}
+
+  pnpm@11.11.0:
+    resolution: {integrity: sha512-RGP2X9gO2A1pvB1L8WPulPYFxzgPwxi7Wy6+FfjNEtScUaTVnpUbQB52TTtsp1HL9RvFDtcAGmvLSTXmhMNIgg==}
+    engines: {node: '>=22.13'}
+    hasBin: true
+
+snapshots:
+
+  '@pnpm/exe@11.11.0':
+    dependencies:
+      '@reflink/reflink': 0.1.19
+      detect-libc: 2.1.2
+    optionalDependencies:
+      '@pnpm/linux-arm64': 11.11.0
+      '@pnpm/linux-x64': 11.11.0
+      '@pnpm/linuxstatic-arm64': 11.11.0
+      '@pnpm/linuxstatic-x64': 11.11.0
+      '@pnpm/macos-arm64': 11.11.0
+      '@pnpm/win-arm64': 11.11.0
+      '@pnpm/win-x64': 11.11.0
+
+  '@pnpm/linux-arm64@11.11.0':
+    optional: true
+
+  '@pnpm/linux-x64@11.11.0':
+    optional: true
+
+  '@pnpm/linuxstatic-arm64@11.11.0':
+    optional: true
+
+  '@pnpm/linuxstatic-x64@11.11.0':
+    optional: true
+
+  '@pnpm/macos-arm64@11.11.0':
+    optional: true
+
+  '@pnpm/win-arm64@11.11.0':
+    optional: true
+
+  '@pnpm/win-x64@11.11.0':
+    optional: true
+
+  '@reflink/reflink-darwin-arm64@0.1.19':
+    optional: true
+
+  '@reflink/reflink-darwin-x64@0.1.19':
+    optional: true
+
+  '@reflink/reflink-linux-arm64-gnu@0.1.19':
+    optional: true
+
+  '@reflink/reflink-linux-arm64-musl@0.1.19':
+    optional: true
+
+  '@reflink/reflink-linux-x64-gnu@0.1.19':
+    optional: true
+
+  '@reflink/reflink-linux-x64-musl@0.1.19':
+    optional: true
+
+  '@reflink/reflink-win32-arm64-msvc@0.1.19':
+    optional: true
+
+  '@reflink/reflink-win32-x64-msvc@0.1.19':
+    optional: true
+
+  '@reflink/reflink@0.1.19':
+    optionalDependencies:
+      '@reflink/reflink-darwin-arm64': 0.1.19
+      '@reflink/reflink-darwin-x64': 0.1.19
+      '@reflink/reflink-linux-arm64-gnu': 0.1.19
+      '@reflink/reflink-linux-arm64-musl': 0.1.19
+      '@reflink/reflink-linux-x64-gnu': 0.1.19
+      '@reflink/reflink-linux-x64-musl': 0.1.19
+      '@reflink/reflink-win32-arm64-msvc': 0.1.19
+      '@reflink/reflink-win32-x64-msvc': 0.1.19
+
+  detect-libc@2.1.2: {}
+
+  pnpm@11.11.0: {}
+
+---
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    dependencies:
+      '@quenty/basicpane':
+        specifier: ^13.31.1
+        version: 13.31.1
+      '@quenty/blend':
+        specifier: ^12.36.1
+        version: 12.36.1
+      '@quenty/gamescalingutils':
+        specifier: ^13.36.1
+        version: 13.36.1
+      '@quenty/genericscreenguiprovider':
+        specifier: ^13.39.1
+        version: 13.39.1
+      '@quenty/loader':
+        specifier: ^10.11.0
+        version: 10.11.0
+      '@quenty/maid':
+        specifier: ^3.9.0
+        version: 3.9.0
+      '@quenty/promise':
+        specifier: ^10.18.1
+        version: 10.18.1
+      '@quenty/promptqueue':
+        specifier: ^1.37.1
+        version: 1.37.1
+      '@quenty/rx':
+        specifier: ^13.28.3
+        version: 13.28.3
+      '@quenty/servicebag':
+        specifier: ^11.18.1
+        version: 11.18.1
+      '@quenty/transitionmodel':
+        specifier: ^7.38.1
+        version: 7.38.1
+      '@quenty/valueobject':
+        specifier: ^13.31.1
+        version: 13.31.1
+
+packages:
+
+  '@quenty/acceltween@2.7.0':
+    resolution: {integrity: sha512-AY1T7ZR2c9/ZcGyXGjfBzrS1Q6ODYqOZQnHgdhS5X50nNeJUBCYN/YfI7YFa7Yd1niUguXCo+nHqYSQzgbluow==}
+
+  '@quenty/baseobject@10.13.0':
+    resolution: {integrity: sha512-JAbHD5bIhjwI1akXSHLUOsU+Vjp/x89y6wKj472EQgQCwOshEluogE5uqPnDcfqStrFZqrjkaHQZl88vHZikZw==}
+
+  '@quenty/basicpane@13.31.1':
+    resolution: {integrity: sha512-KTsjb06EuE33SRwKTlIKeW8GpTQ3M/kJ7Yd/0BkeVU8w2TEUh6oJStJRrGMMXbzAS5wkSC8omlGtNrmwKaP+RQ==}
+
+  '@quenty/blend@12.36.1':
+    resolution: {integrity: sha512-ofNti+Jb+EtuTegfHg+lDIxPI82SWyTV5NNSYbtESq81RqKizC2qH8e+vSA9ODloKuLpp+qUdUwsRCn/5/g+Nw==}
+
+  '@quenty/brio@14.30.1':
+    resolution: {integrity: sha512-moHugoDyiu+j2maq3CVXqGY/7S+1fJffr152Gtsr5T9/PWkRB7ZY4i5RW8uJNoFIRCzHaP0N0o84dJJIVHGvMA==}
+
+  '@quenty/cancellabledelay@3.6.2':
+    resolution: {integrity: sha512-rBPP8nghqqBsq3g4z5APz9IaEU3OoB6AnqIuKc8oUK27YFlMW+WGE1BG8cAhE8rAD55a36007SLhPfJUiO8v4w==}
+
+  '@quenty/canceltoken@11.19.1':
+    resolution: {integrity: sha512-8eI5ctOkX4OfYPIysDn3yH8fqgeyIEipMHBTACoIsuSRSj3AwAcs1JJfzuekLhQX1BsBYpg8CT/hfDmipJI6cw==}
+
+  '@quenty/deferred@2.3.2':
+    resolution: {integrity: sha512-/8C9cJtnsRa+hvmW5Q94JdZtUz+OUg1+oGq2/3PHTWCoVtmwLTxR+5AHpYzQKaitEIxAIQaZqhuhp5mOTMteTw==}
+
+  '@quenty/ducktype@5.11.0':
+    resolution: {integrity: sha512-VcS+LlWibt273JEjUyLyLkPspo7I0YGatYXisaz/GNzBInSVDgXHkJIvNvkr7SzMqABarnRBE3M8lr0q9DXHBw==}
+
+  '@quenty/enumutils@3.4.6':
+    resolution: {integrity: sha512-go/K8zTLG8xQwciZxd+BB6qrFIifErufPGY96g9UcTmDhPaHMHozE7PuIdNpBlWPnPW1o+aWO5jN46mgmdUP9A==}
+
+  '@quenty/gamescalingutils@13.36.1':
+    resolution: {integrity: sha512-sLeRxshuIJSyNYlqqGYLECzXE3WnrlW61KVDvA4muJCcvfP8Q6+ooZQHND8aohLEffhrnYt73Rx/cOIS+UrytQ==}
+
+  '@quenty/genericscreenguiprovider@13.39.1':
+    resolution: {integrity: sha512-yL0eOH16kFKbsB3C4uQn/FruiIUgQ3xmTSmMjEKZEPDMdbri5qmXQmAHS0GkjR6y5lwEWbbH07jeXUJQ/TxEuw==}
+
+  '@quenty/instanceutils@13.30.1':
+    resolution: {integrity: sha512-zrQvz5ron1gFm/gLrhNChkosSniLnYf/xk3Y/b83sQs7G/XTqgXNObqyctrTbEvJzgeZGDMdu0wIcy30sqX6pg==}
+
+  '@quenty/loader@10.11.0':
+    resolution: {integrity: sha512-dijfRLI2bouQjt9OG20aL7waEzJNzzFMXC3+NFm2meCQ7jvCTI5EgmW3eYZHmegFAzmrWtogbQPNR+pIb8T3Zg==}
+
+  '@quenty/maid@3.9.0':
+    resolution: {integrity: sha512-MKyAYZRdIjYUBchMQavT0AXV/nJMmuRn4jIy8gYNV0Ub40Naub7ECGLtIviLwyiwW0FGKS/Wl5tGjHfObvAwUw==}
+
+  '@quenty/math@2.7.5':
+    resolution: {integrity: sha512-tYOvmTwijqm1og6QdO+j9EDKSk0/0TCae83H1yUElYWuzV1PAG1Q18VT0Yk0q/05Uduulb2s3Dx6QmyI/qKSgA==}
+
+  '@quenty/nevermore-test-runner@1.4.0':
+    resolution: {integrity: sha512-mlscddpT+16AY3sW8mJoHoD4nDR94viNQ1sWKC0//bZRaTOHColG2YqE+p6uykeOPXMuwG87c4g0BgjSNJybHQ==}
+
+  '@quenty/promise@10.18.1':
+    resolution: {integrity: sha512-U0/cVc4/4uY43r+BaoGq4wkcAq8q1poISro4vKw/pDTrB1EWLYPDKAhd+cpFybJ1sVV61lp8zj1ys7+qLflNPQ==}
+
+  '@quenty/promisemaid@5.18.1':
+    resolution: {integrity: sha512-j1pQsOn4N2BJGYUOGYu6tDstnU8YarpVUV2Fh/fywD5jW36ZO6yW5p4vMZfosu0TU913p6gEkGw5eGn0JSsPKw==}
+
+  '@quenty/promptqueue@1.37.1':
+    resolution: {integrity: sha512-37yxnRpbqtrgMnLby1XDWixkW5rJ72ZGm5TIzwtN9p0dF3Gx/YaYLn8qhY2SQHzZNKAe48effSxMpBR0/mgLvA==}
+
+  '@quenty/rx@13.28.3':
+    resolution: {integrity: sha512-leHMAKXYZ5db+TeR72UVklpk3ACydJvTq8OAuC/Eq2qABh33RkmHoWbax0MMbiDW4k70vyZ2O6kEvANpWrGVTg==}
+
+  '@quenty/rxsignal@7.28.3':
+    resolution: {integrity: sha512-0a4qKBs/yJ46SJetHddtjLIbVee6K1pI1YA/ofSgaIMsNnbDTIhkgfVHU0gmJewEYTpOzjmkGGFg81S2ZaKPug==}
+
+  '@quenty/servicebag@11.18.1':
+    resolution: {integrity: sha512-P2VneQ+0PrdHFTbZqQz9dlSvgHXKn9eW/zT8QESLovxoS9nGIQMIhC3Bh5zYvXK1cZBhCxZVxuUwH87RdtG3XQ==}
+
+  '@quenty/signal@7.13.1':
+    resolution: {integrity: sha512-gc225T/jLNBRFWbgkc3hx3Ta8ufu3iNa+Su1C2n4HAAR6uuRCwhWfH/3S+oqDZgyY9M0MZEMkMzOZHE78AkGNA==}
+
+  '@quenty/spring@10.12.0':
+    resolution: {integrity: sha512-VcGJL6Kgr+KcSPzxIz24GF+chSZZfGMLO3vNnOLVZK5tC6ULGB/5Mi/8diWfZTyZyf0uTv4J0OYUYpFLiC2riQ==}
+
+  '@quenty/steputils@3.6.3':
+    resolution: {integrity: sha512-iswkWhiwPn+TM5ktwAs6y3mC7+Tymq/xhXpxQIW8Q2IHgbIArT2kjbbGehRaomtkvKHuqtb3bW/ORnPyK8IKBQ==}
+
+  '@quenty/string@3.3.7':
+    resolution: {integrity: sha512-qt9r9b7y5Qz8nGfvizqvgl/Vfjbib1lzCHvSFYDhQeD5cNnUG/cHHx2aJzPRU36064DJNDOlFaX00969jowsEw==}
+
+  '@quenty/symbol@3.5.2':
+    resolution: {integrity: sha512-Opt3Pvdie3LDScZms7eTe+5rFUIRP4S1I7RFtiuyCF4XoDwJ2kjWO9bUNMX+zjumhaJ/96ZI5Y4D8mowyObs5Q==}
+
+  '@quenty/table@3.9.2':
+    resolution: {integrity: sha512-uU0XEiWk2CHtdhcBnM2F7sU7jljD/D0crntozfPLfyl4BOHT3oWNr0HF7IfrKVxVo3WnDj3KBXV6iMmYY6q9vQ==}
+
+  '@quenty/throttle@10.12.2':
+    resolution: {integrity: sha512-GC8pFbSZOmuAyOHU3q02JyKs25Vl/M4rsK+SZeFklqwPlb0I7LbLslSfsV0801OS4SmPnKn6+3i0CnkwNTP9QA==}
+
+  '@quenty/timedtween@7.36.1':
+    resolution: {integrity: sha512-Qom99rfhGnl4Hi8KEp4WQ4NaV9aiOIMsKqtDwjHZuus27XFlWdn5Aaen6FtXHSJ4+nCbpoziI5Hlg6dpnUBzhw==}
+
+  '@quenty/transitionmodel@7.38.1':
+    resolution: {integrity: sha512-zd3O8CoRSS5QnKqLQwJAN925OMOjaNwSrSRWHvuN59Nw1bk7Xq3RxTGwYj31go54xEQpreCZA1c34FUKmc0w9Q==}
+
+  '@quenty/typeutils@1.3.0':
+    resolution: {integrity: sha512-QHhZypCGIhHFHItRMA7XiRNdcWbq2KnuJNkSKSd4sVltaPA5O/8UMyzhtSyCeCqZom86BkEp6VNSOxFXN8ltSw==}
+
+  '@quenty/uiobjectutils@6.29.1':
+    resolution: {integrity: sha512-XPRT7nFejfJK1I8hebCqg439XUTHNOWyFiu4378cvc5qczWttlcIMKkDmtZkmgtn1SvaqY6fSfp4wVtYeSAh2Q==}
+
+  '@quenty/valuebaseutils@13.30.1':
+    resolution: {integrity: sha512-fTsMsX33Z5wodgXrhyEzMFIX0dPQEX8f6tllWSDI6vYf0nZSgcxVOf7jBFhLPPBLUYMvZlYgMN2YMQfOFvbo5A==}
+
+  '@quenty/valueobject@13.31.1':
+    resolution: {integrity: sha512-9Rt1jXvhb+NVZfaS20ZPXK05KhxkG3pWJIMYtUa5XbB4CMlOdRej3L/62NsRZSaBuI6D1fDwNNG4ShG9tBnz2Q==}
+
+  '@quentystudios/jest-lua@3.10.0-quenty.2':
+    resolution: {integrity: sha512-TE7vhnYjygcBjjqeKLsmbwxhJeiDeekh/E2xcvQ0VZAwHNr+Yn1pk1n/PRJu+KtH2fWYkw20pQO4o/hKPs0lRA==}
+
+snapshots:
+
+  '@quenty/acceltween@2.7.0': {}
+
+  '@quenty/baseobject@10.13.0':
+    dependencies:
+      '@quenty/loader': 10.11.0
+      '@quenty/maid': 3.9.0
+
+  '@quenty/basicpane@13.31.1':
+    dependencies:
+      '@quenty/brio': 14.30.1
+      '@quenty/ducktype': 5.11.0
+      '@quenty/loader': 10.11.0
+      '@quenty/maid': 3.9.0
+      '@quenty/rx': 13.28.3
+      '@quenty/signal': 7.13.1
+      '@quenty/valueobject': 13.31.1
+
+  '@quenty/blend@12.36.1':
+    dependencies:
+      '@quenty/acceltween': 2.7.0
+      '@quenty/brio': 14.30.1
+      '@quenty/ducktype': 5.11.0
+      '@quenty/instanceutils': 13.30.1
+      '@quenty/loader': 10.11.0
+      '@quenty/maid': 3.9.0
+      '@quenty/nevermore-test-runner': 1.4.0
+      '@quenty/promise': 10.18.1
+      '@quenty/rx': 13.28.3
+      '@quenty/signal': 7.13.1
+      '@quenty/spring': 10.12.0
+      '@quenty/steputils': 3.6.3
+      '@quenty/string': 3.3.7
+      '@quenty/uiobjectutils': 6.29.1
+      '@quenty/valuebaseutils': 13.30.1
+      '@quenty/valueobject': 13.31.1
+      '@quentystudios/jest-lua': 3.10.0-quenty.2
+
+  '@quenty/brio@14.30.1':
+    dependencies:
+      '@quenty/loader': 10.11.0
+      '@quenty/maid': 3.9.0
+      '@quenty/nevermore-test-runner': 1.4.0
+      '@quenty/rx': 13.28.3
+      '@quenty/signal': 7.13.1
+      '@quenty/steputils': 3.6.3
+      '@quenty/table': 3.9.2
+      '@quentystudios/jest-lua': 3.10.0-quenty.2
+
+  '@quenty/cancellabledelay@3.6.2': {}
+
+  '@quenty/canceltoken@11.19.1':
+    dependencies:
+      '@quenty/ducktype': 5.11.0
+      '@quenty/loader': 10.11.0
+      '@quenty/maid': 3.9.0
+      '@quenty/promise': 10.18.1
+      '@quenty/signal': 7.13.1
+
+  '@quenty/deferred@2.3.2': {}
+
+  '@quenty/ducktype@5.11.0':
+    dependencies:
+      '@quenty/loader': 10.11.0
+
+  '@quenty/enumutils@3.4.6': {}
+
+  '@quenty/gamescalingutils@13.36.1':
+    dependencies:
+      '@quenty/baseobject': 10.13.0
+      '@quenty/blend': 12.36.1
+      '@quenty/instanceutils': 13.30.1
+      '@quenty/loader': 10.11.0
+      '@quenty/rx': 13.28.3
+      '@quenty/valueobject': 13.31.1
+
+  '@quenty/genericscreenguiprovider@13.39.1':
+    dependencies:
+      '@quenty/blend': 12.36.1
+      '@quenty/loader': 10.11.0
+      '@quenty/maid': 3.9.0
+      '@quenty/rx': 13.28.3
+      '@quenty/servicebag': 11.18.1
+      '@quenty/string': 3.3.7
+      '@quenty/uiobjectutils': 6.29.1
+      '@quenty/valueobject': 13.31.1
+
+  '@quenty/instanceutils@13.30.1':
+    dependencies:
+      '@quenty/brio': 14.30.1
+      '@quenty/loader': 10.11.0
+      '@quenty/maid': 3.9.0
+      '@quenty/nevermore-test-runner': 1.4.0
+      '@quenty/rx': 13.28.3
+      '@quenty/symbol': 3.5.2
+      '@quentystudios/jest-lua': 3.10.0-quenty.2
+
+  '@quenty/loader@10.11.0': {}
+
+  '@quenty/maid@3.9.0':
+    dependencies:
+      '@quenty/loader': 10.11.0
+      '@quenty/nevermore-test-runner': 1.4.0
+      '@quentystudios/jest-lua': 3.10.0-quenty.2
+
+  '@quenty/math@2.7.5': {}
+
+  '@quenty/nevermore-test-runner@1.4.0':
+    dependencies:
+      '@quenty/loader': 10.11.0
+      '@quentystudios/jest-lua': 3.10.0-quenty.2
+
+  '@quenty/promise@10.18.1':
+    dependencies:
+      '@quenty/deferred': 2.3.2
+      '@quenty/loader': 10.11.0
+      '@quenty/maid': 3.9.0
+      '@quenty/math': 2.7.5
+      '@quenty/signal': 7.13.1
+
+  '@quenty/promisemaid@5.18.1':
+    dependencies:
+      '@quenty/loader': 10.11.0
+      '@quenty/maid': 3.9.0
+      '@quenty/promise': 10.18.1
+
+  '@quenty/promptqueue@1.37.1':
+    dependencies:
+      '@quenty/baseobject': 10.13.0
+      '@quenty/loader': 10.11.0
+      '@quenty/promise': 10.18.1
+      '@quenty/rx': 13.28.3
+      '@quenty/signal': 7.13.1
+      '@quenty/transitionmodel': 7.38.1
+      '@quenty/valueobject': 13.31.1
+
+  '@quenty/rx@13.28.3':
+    dependencies:
+      '@quenty/cancellabledelay': 3.6.2
+      '@quenty/canceltoken': 11.19.1
+      '@quenty/ducktype': 5.11.0
+      '@quenty/loader': 10.11.0
+      '@quenty/maid': 3.9.0
+      '@quenty/nevermore-test-runner': 1.4.0
+      '@quenty/promise': 10.18.1
+      '@quenty/signal': 7.13.1
+      '@quenty/symbol': 3.5.2
+      '@quenty/table': 3.9.2
+      '@quenty/throttle': 10.12.2
+      '@quenty/typeutils': 1.3.0
+      '@quentystudios/jest-lua': 3.10.0-quenty.2
+
+  '@quenty/rxsignal@7.28.3':
+    dependencies:
+      '@quenty/loader': 10.11.0
+      '@quenty/rx': 13.28.3
+
+  '@quenty/servicebag@11.18.1':
+    dependencies:
+      '@quenty/baseobject': 10.13.0
+      '@quenty/loader': 10.11.0
+      '@quenty/signal': 7.13.1
+
+  '@quenty/signal@7.13.1':
+    dependencies:
+      '@quenty/loader': 10.11.0
+
+  '@quenty/spring@10.12.0':
+    dependencies:
+      '@quenty/ducktype': 5.11.0
+      '@quenty/loader': 10.11.0
+
+  '@quenty/steputils@3.6.3': {}
+
+  '@quenty/string@3.3.7': {}
+
+  '@quenty/symbol@3.5.2': {}
+
+  '@quenty/table@3.9.2': {}
+
+  '@quenty/throttle@10.12.2':
+    dependencies:
+      '@quenty/loader': 10.11.0
+      '@quenty/nevermore-test-runner': 1.4.0
+      '@quenty/typeutils': 1.3.0
+      '@quentystudios/jest-lua': 3.10.0-quenty.2
+
+  '@quenty/timedtween@7.36.1':
+    dependencies:
+      '@quenty/basicpane': 13.31.1
+      '@quenty/blend': 12.36.1
+      '@quenty/loader': 10.11.0
+      '@quenty/maid': 3.9.0
+      '@quenty/math': 2.7.5
+      '@quenty/promise': 10.18.1
+      '@quenty/promisemaid': 5.18.1
+      '@quenty/rx': 13.28.3
+      '@quenty/signal': 7.13.1
+      '@quenty/steputils': 3.6.3
+      '@quenty/valueobject': 13.31.1
+
+  '@quenty/transitionmodel@7.38.1':
+    dependencies:
+      '@quenty/baseobject': 10.13.0
+      '@quenty/basicpane': 13.31.1
+      '@quenty/blend': 12.36.1
+      '@quenty/ducktype': 5.11.0
+      '@quenty/instanceutils': 13.30.1
+      '@quenty/loader': 10.11.0
+      '@quenty/maid': 3.9.0
+      '@quenty/promise': 10.18.1
+      '@quenty/rx': 13.28.3
+      '@quenty/signal': 7.13.1
+      '@quenty/spring': 10.12.0
+      '@quenty/timedtween': 7.36.1
+      '@quenty/valueobject': 13.31.1
+
+  '@quenty/typeutils@1.3.0':
+    dependencies:
+      '@quenty/loader': 10.11.0
+
+  '@quenty/uiobjectutils@6.29.1':
+    dependencies:
+      '@quenty/brio': 14.30.1
+      '@quenty/enumutils': 3.4.6
+      '@quenty/instanceutils': 13.30.1
+      '@quenty/loader': 10.11.0
+      '@quenty/rx': 13.28.3
+
+  '@quenty/valuebaseutils@13.30.1':
+    dependencies:
+      '@quenty/brio': 14.30.1
+      '@quenty/instanceutils': 13.30.1
+      '@quenty/loader': 10.11.0
+      '@quenty/promise': 10.18.1
+      '@quenty/rx': 13.28.3
+      '@quenty/rxsignal': 7.28.3
+
+  '@quenty/valueobject@13.31.1':
+    dependencies:
+      '@quenty/brio': 14.30.1
+      '@quenty/ducktype': 5.11.0
+      '@quenty/loader': 10.11.0
+      '@quenty/maid': 3.9.0
+      '@quenty/rx': 13.28.3
+      '@quenty/signal': 7.13.1
+      '@quenty/valuebaseutils': 13.30.1
+
+  '@quentystudios/jest-lua@3.10.0-quenty.2': {}
