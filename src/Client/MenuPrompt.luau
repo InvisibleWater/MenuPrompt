@@ -66,6 +66,10 @@ function MenuPrompt.PromiseSustain(self: MenuPrompt, doNotAnimate: boolean?): Pr
     return self._sustainModel:PromiseSustain(doNotAnimate)
 end
 
+function MenuPrompt.Stop(self: MenuPrompt, doNotAnimate: boolean?): ()
+    return self._sustainModel:Stop(doNotAnimate)
+end
+
 function MenuPrompt.SetSize(self: MenuPrompt, size: ValueObject.Mountable<Vector2>): () -> ()
     return self._sizeValue:Mount(size)
 end

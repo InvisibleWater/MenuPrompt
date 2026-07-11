@@ -70,7 +70,7 @@ function MenuPromptService.HideCurrent(self: MenuPromptService, doNotAnimate: bo
 	return self._queue:HideCurrent(doNotAnimate)
 end
 
-function MenuPromptService.Clear(self: MenuPromptService, doNotAnimate: boolean?)
+function MenuPromptService.ClearQueue(self: MenuPromptService, doNotAnimate: boolean?)
 	self._queue:Clear(doNotAnimate)
 end
 
