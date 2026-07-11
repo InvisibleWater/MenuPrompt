@@ -1,7 +1,7 @@
 {
   "name": "@invisiblewater/menuprompt",
-  "version": "1.0.0",
-  "description": "",
+  "version": "1.0.1",
+  "description": "Base of a system for displaying menu prompts in Roblox games.",
   "main": "index.js",
   "scripts": {
     "preinstall": "npx only-allow pnpm"
