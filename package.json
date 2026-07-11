@@ -1,6 +1,6 @@
 {
   "name": "@invisiblewater/menuprompt",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Base of a system for displaying menu prompts in Roblox games.",
   "main": "index.js",
   "scripts": {
@@ -25,13 +25,6 @@
   "funding": {
     "type": "github",
     "url": "https://github.com/sponsors/InvisibleWater"
-  },
-  "devEngines": {
-    "packageManager": {
-      "name": "pnpm",
-      "version": "^11.9.0",
-      "onFail": "download"
-    }
   },
   "type": "module",
   "dependencies": {
