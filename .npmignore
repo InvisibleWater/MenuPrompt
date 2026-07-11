@@ -1,5 +1,6 @@
 *.sublime-workspace
 *.rbxl.lock
+*.vscode
 node_modules
 out
 roblox.toml
