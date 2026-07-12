@@ -48,11 +48,11 @@ function MenuPrompt.new(promptBodyBuilder: PromptBodyBuilder): MenuPrompt
         self.Gui = gui
     end))
 
-    self:SetPromiseShow(function(maid, doNotAnimate)
-        self._percentVisibleModel:PromiseShow(maid, doNotAnimate)
+    self:SetPromiseShow(function(_, doNotAnimate)
+        return self._percentVisibleModel:PromiseShow(doNotAnimate)
     end)
-    self:SetPromiseHide(function(...)
-        self._percentVisibleModel:PromiseHide(...)
+    self:SetPromiseHide(function(_, doNotAnimate)
+        return self._percentVisibleModel:PromiseHide(doNotAnimate)
     end)
 
     return self
@@ -67,7 +67,7 @@ function MenuPrompt.PromiseSustain(self: MenuPrompt, doNotAnimate: boolean?): Pr
 end
 
 function MenuPrompt.Stop(self: MenuPrompt, doNotAnimate: boolean?): ()
-    return self._sustainModel:Stop(doNotAnimate)
+    self._sustainModel:Stop(doNotAnimate)
 end
 
 function MenuPrompt.SetSize(self: MenuPrompt, size: ValueObject.Mountable<Vector2>): () -> ()
