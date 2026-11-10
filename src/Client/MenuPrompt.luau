@@ -8,6 +8,7 @@ local Blend = require("Blend")
 local Maid = require("Maid")
 local Observable = require("Observable")
 local Promise = require("Promise")
+local ServiceBag = require("ServiceBag")
 local SpringTransitionModel = require("SpringTransitionModel")
 local SustainModel = require("SustainModel")
 local TransitionModel = require("TransitionModel")
@@ -22,14 +23,15 @@ export type MenuPrompt = typeof(setmetatable(
         _sustainModel: SustainModel.SustainModel,
         _backgroundColor: ValueObject.ValueObject<Color3>,
         _sizeValue: ValueObject.ValueObject<Vector2>,
-        _buildPromptBody: PromptBodyBuilder
+        _buildPromptBody: PromptBodyBuilder,
+        _serviceBag: ServiceBag.ServiceBag
     },
     {} :: typeof({__index = MenuPrompt})
 )) & TransitionModel.TransitionModel
 
-export type PromptBodyBuilder = (MenuPrompt, Maid.Maid) -> BasicPane.BasicPane
+export type PromptBodyBuilder = (MenuPrompt, Maid.Maid, ServiceBag.ServiceBag) -> BasicPane.BasicPane
 
-function MenuPrompt.new(promptBodyBuilder: PromptBodyBuilder): MenuPrompt
+function MenuPrompt.new(promptBodyBuilder: PromptBodyBuilder, serviceBag: ServiceBag.ServiceBag): MenuPrompt
     local self = setmetatable(TransitionModel.new() :: any, MenuPrompt)
 
     self._buildPromptBody = promptBodyBuilder
@@ -40,7 +42,7 @@ function MenuPrompt.new(promptBodyBuilder: PromptBodyBuilder): MenuPrompt
     self._percentVisibleModel:BindToPaneVisbility(self)
 
     self._sustainModel = self._maid:Add(SustainModel.new())
-
+    self._serviceBag = serviceBag
     self._sizeValue = self._maid:Add(ValueObject.new(Vector2.new(4, 3), "Vector2"))
     self._backgroundColor = self._maid:Add(ValueObject.new(Color3.fromRGB(27, 42, 53), "Color3"))
 
@@ -101,7 +103,7 @@ function MenuPrompt._render(self: MenuPrompt): Observable.Observable<Instance>
         },
         (self:ObserveIsShowingComplete() :: any):Pipe{
             BasicPaneUtils.whenVisibleBrio(function(maid): BasicPane.BasicPane 
-                return self:_buildPromptBody(maid)
+                return self:_buildPromptBody(maid, self._serviceBag)
             end)
         }
     }
