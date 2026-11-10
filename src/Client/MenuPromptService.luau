@@ -23,7 +23,8 @@ export type MenuPromptService = typeof(setmetatable(
 	{} :: {
 		_maid: Maid.Maid,
 		_queue: PromptQueue.PromptQueue,
-		_screenGui: ScreenGui
+		_screenGui: ScreenGui,
+		_serviceBag: ServiceBag.ServiceBag
 	},
 	{} :: typeof({__index = MenuPromptService})
 ))
@@ -32,6 +33,7 @@ function MenuPromptService.Init(self: MenuPromptService, serviceBag: ServiceBag.
 	self._maid = Maid.new()
 	self._queue = self._maid:Add(PromptQueue.new())
 	self._screenGui = self._maid:Add(serviceBag:GetService(MenuPromptScreenGuiProvider):Get("MENU_PROMPT"))
+	self._serviceBag = serviceBag
 end
 
 function MenuPromptService._renderUICorner(self: MenuPromptService, object: GuiObject): Observable.Observable<UICorner>
@@ -50,7 +52,7 @@ end
 function MenuPromptService.PushPrompt(self: MenuPromptService, promptBodyBuilder: MenuPrompt.PromptBodyBuilder): MenuPrompt.MenuPrompt
 	local maid = Maid.new()
 
-	local prompt = maid:Add(MenuPrompt.new(promptBodyBuilder))
+	local prompt = maid:Add(MenuPrompt.new(promptBodyBuilder, self._serviceBag))
 	prompt.Gui.Parent = self._screenGui
 
 	maid:GiveTask(GameScalingUtils.renderDialogPadding{
