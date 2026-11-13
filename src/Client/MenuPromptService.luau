@@ -55,10 +55,6 @@ function MenuPromptService.PushPrompt(self: MenuPromptService, promptBodyBuilder
 	local prompt = maid:Add(MenuPrompt.new(promptBodyBuilder, self._serviceBag))
 	prompt.Gui.Parent = self._screenGui
 
-	maid:GiveTask(GameScalingUtils.renderDialogPadding{
-		Parent = prompt.Gui,
-		ScreenGui = self._screenGui
-	}:Subscribe())
 	maid:GiveTask(self:_renderUICorner(prompt.Gui):Subscribe())
 
 	self._maid:GivePromise(self._queue:Queue(prompt)):Finally(function()
