@@ -1,6 +1,6 @@
 {
   "name": "@invisiblewater/menuprompt",
-  "version": "2.2.0",
+  "version": "2.3.0",
   "description": "Base of a system for displaying menu prompts in Roblox games.",
   "main": "index.js",
   "scripts": {
@@ -28,17 +28,17 @@
   },
   "type": "module",
   "dependencies": {
-    "@quenty/basicpane": "^13.31.1",
-    "@quenty/blend": "^12.36.1",
-    "@quenty/gamescalingutils": "^13.36.1",
-    "@quenty/genericscreenguiprovider": "^13.39.1",
-    "@quenty/loader": "^10.11.0",
-    "@quenty/maid": "^3.9.0",
-    "@quenty/promise": "^10.18.1",
-    "@quenty/promptqueue": "^1.37.1",
-    "@quenty/rx": "^13.28.3",
-    "@quenty/servicebag": "^11.18.1",
-    "@quenty/transitionmodel": "^7.38.1",
-    "@quenty/valueobject": "^13.31.1"
+    "@quenty/basicpane": "^13.39.1",
+    "@quenty/blend": "^12.51.1",
+    "@quenty/gamescalingutils": "^13.51.1",
+    "@quenty/genericscreenguiprovider": "^13.54.1",
+    "@quenty/loader": "^10.11.3",
+    "@quenty/maid": "^3.12.3",
+    "@quenty/promise": "^10.25.1",
+    "@quenty/promptqueue": "^1.52.1",
+    "@quenty/rx": "^13.35.1",
+    "@quenty/servicebag": "^11.21.3",
+    "@quenty/transitionmodel": "^7.53.1",
+    "@quenty/valueobject": "^13.39.1"
   }
 }
