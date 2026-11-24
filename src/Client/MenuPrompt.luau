@@ -34,7 +34,7 @@ function MenuPrompt.new(promptBodyBuilder: PromptBodyBuilder, serviceBag: Servic
     local self = setmetatable(TransitionModel.new() :: any, MenuPrompt)
 
     self._percentVisibleModel = self._maid:Add(SpringTransitionModel.new())
-    self._percentVisibleModel:SetSpeed(100)
+    self._percentVisibleModel:SetSpeed(50)
     self._percentVisibleModel:SetEpsilon(1e-2)
     self._percentVisibleModel:BindToPaneVisbility(self)
 
