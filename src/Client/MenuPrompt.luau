@@ -3,7 +3,6 @@
 local require = require(script.Parent.loader).load(script)
 
 local BasicPane = require("BasicPane")
-local BasicPaneUtils = require("BasicPaneUtils")
 local Blend = require("Blend")
 local Maid = require("Maid")
 local Observable = require("Observable")
@@ -23,7 +22,7 @@ export type MenuPrompt = typeof(setmetatable(
         _sustainModel: SustainModel.SustainModel,
         _backgroundColor: ValueObject.ValueObject<Color3>,
         _sizeValue: ValueObject.ValueObject<Vector2>,
-        _buildPromptBody: PromptBodyBuilder,
+        _promptBody: BasicPane.BasicPane,
         _serviceBag: ServiceBag.ServiceBag
     },
     {} :: typeof({__index = MenuPrompt})
@@ -33,8 +32,6 @@ export type PromptBodyBuilder = (MenuPrompt, Maid.Maid, ServiceBag.ServiceBag) -
 
 function MenuPrompt.new(promptBodyBuilder: PromptBodyBuilder, serviceBag: ServiceBag.ServiceBag): MenuPrompt
     local self = setmetatable(TransitionModel.new() :: any, MenuPrompt)
-
-    self._buildPromptBody = promptBodyBuilder
 
     self._percentVisibleModel = self._maid:Add(SpringTransitionModel.new())
     self._percentVisibleModel:SetSpeed(100)
@@ -46,8 +43,14 @@ function MenuPrompt.new(promptBodyBuilder: PromptBodyBuilder, serviceBag: Servic
     self._sizeValue = self._maid:Add(ValueObject.new(Vector2.new(4, 3), "Vector2"))
     self._backgroundColor = self._maid:Add(ValueObject.new(Color3.fromRGB(27, 42, 53), "Color3"))
 
+    self._promptBody = self._maid:Add(promptBodyBuilder(self, self._maid, serviceBag))
+
     self._maid:GiveTask(self:_render():Subscribe(function(gui)
         self.Gui = gui
+    end))
+
+    self._maid:GiveTask(self:ObserveIsShowingComplete():Subscribe(function(complete)
+        self._promptBody:SetVisible(complete)
     end))
 
     self:SetPromiseShow(function(_, doNotAnimate)
@@ -87,7 +90,7 @@ function MenuPrompt._render(self: MenuPrompt): Observable.Observable<Instance>
         AnchorPoint = Vector2.new(0.5, 0.5),
         BackgroundColor3 = self._backgroundColor,
         BackgroundTransparency = Blend.Computed(self._percentVisibleModel, function(alpha): number
-            return 0.5 * (1 - alpha)
+            return math.lerp(0.5, 1, 1 - alpha)
         end),
         Blend.New "UIAspectRatioConstraint" {
             AspectRatio = Blend.Computed(self._sizeValue, function(size): number
@@ -101,11 +104,7 @@ function MenuPrompt._render(self: MenuPrompt): Observable.Observable<Instance>
         Blend.New "UIScale" {
             Scale = self._percentVisibleModel
         },
-        (self:ObserveIsShowingComplete() :: any):Pipe{
-            BasicPaneUtils.whenVisibleBrio(function(maid): BasicPane.BasicPane 
-                return self:_buildPromptBody(maid, self._serviceBag)
-            end)
-        }
+        self._promptBody.Gui
     }
 end
 
